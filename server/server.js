@@ -17,6 +17,8 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 
+app.user(express.static('client/build'))
+
 const { User } = require('./models/user');
 const { Post } = require('./models/post');
 const { auth } = require('./middleware/auth');
@@ -61,6 +63,12 @@ mongoose.connection.once('open', () => console.log("Connected succesfully to Mon
 require('./routes')(app, User, auth, Post, Comment);
 
 
+if(process.env.NODE_ENV === 'production'){
+    const path = require('path')
+    app.get('/*',(req,res)=>{
+        res.sendFile(path.resolve(__dirname,'../client','build','index.html'))
+    })
+}
 
 
 const PORT = process.env.PORT || 3001;
