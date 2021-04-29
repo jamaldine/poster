@@ -1,0 +1,13 @@
+.postNumber{
+    //background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto", sans-serif;
+
+    .post{
+    font-size: 10px;
+    }
+    .number{
+        align-self: flex-end;
+    }
+}

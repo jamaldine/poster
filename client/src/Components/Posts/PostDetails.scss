@@ -1,0 +1,43 @@
+.postDetails {
+  padding: 0 200px;
+    
+        .postItem {
+          .postContainer {
+            .postItem-title {
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 1.1rem;
+                color: #111111;
+                margin: 76px 0 1rem 72px;
+            }
+            .postItem-content {
+                font-weight: 400;
+                line-height: 1.8;
+                color: #222222;
+                font-size: 1.125rem;
+                margin: 0 0 22px 72px;
+                text-align: justify;
+            }
+            .postItem-medias {
+              height: 700px;
+              margin: 0 0 22px 72px;
+              .carousel-root {
+                height: 100%;
+                .carousel-slider {
+                  height: 100%;
+                }
+              }
+            }
+            .comments{
+                margin: 135px 0 35px;
+                display: flex;
+                align-items: center;
+            }
+            .replay{
+              margin: 15px 0 35px !important;
+            }
+            .commentsList{}
+          }
+        }
+      }
+ 

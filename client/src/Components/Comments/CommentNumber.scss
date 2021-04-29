@@ -1,0 +1,12 @@
+.commentNumber{
+    //background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto", sans-serif;
+    .comment{
+    font-size: 10px;
+    }
+    .number{
+        align-self: flex-end;
+    }
+}

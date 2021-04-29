@@ -1,0 +1,12 @@
+.FormAddComment {
+  flex: 1;
+  margin: 0 22px;
+  .title-content {
+    width: 100%;
+    height: 43px;
+    input {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

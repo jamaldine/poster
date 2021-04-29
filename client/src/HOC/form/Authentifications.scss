@@ -1,0 +1,228 @@
+.hoc {
+  .login_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px 1px #9e989e;
+    background-color: white;
+    height: 80%;
+    width: 30%;
+
+    .paper {
+      position: absolute;
+      top: -3px;
+      left: -5px;
+      transform: rotate(-88deg);
+    }
+    .all-form {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      .firstBoule {
+        background-color: rebeccapurple;
+        background: linear-gradient(
+          218.03deg,
+          rgba(186, 35, 210, 0.66) 15.81%,
+          rgba(84, 255, 255, 0.36) 28.5%
+        );
+        background: linear-gradient(
+          221.54deg,
+          rgba(186, 35, 210, 0.66) 16%,
+          rgba(84, 255, 255, 0.36) 53.28%
+        );
+        position: absolute;
+        top: 80px;
+        right: -109px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .lastBoule {
+        background-color: rebeccapurple;
+        background: linear-gradient(
+          218.03deg,
+          rgba(186, 35, 210, 0.66) 15.81%,
+          rgba(84, 255, 255, 0.36) 28.5%
+        );
+        background: linear-gradient(
+          221.54deg,
+          rgba(186, 35, 210, 0.66) 16%,
+          rgba(84, 255, 255, 0.36) 53.28%
+        );
+        position: absolute;
+        bottom: 120px;
+        left: -109px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .paper {
+        position: absolute;
+        top: -3px;
+        left: -5px;
+        transform: rotate(-88deg);
+      }
+      .all-log {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .logo {
+          display: flex;
+          flex-direction: column;
+          //margin-top: 35px;
+          padding-left: 40px;
+          //margin-bottom: 68px;
+          .login-login {
+            font-size: 90px;
+            color: #00f2ff;
+            font-weight: 500;
+            background: -webkit-linear-gradient(
+              rgba(67, 219, 219, 1),
+              rgba(255, 255, 255, 0.63)
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 22px;
+          }
+          .img-logo {
+            height: 100px;
+            width: 100px;
+          }
+          .txt-logo {
+            text-shadow: 2px;
+            font-family: monospace;
+            font-style: normal;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.9px;
+            font-size: 17px;
+          }
+        }
+        .log {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .template-login {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 0;
+            .login-fileds {
+              width: 100%;
+              padding: 0 40px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .labelle {
+                flex: 1;
+                font-family: sans-serif;
+                font-style: normal;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 0.9px;
+                padding-right: 15px;
+              }
+              .input-with-errors {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                input[class="input-field"] {
+                  flex: 1 1;
+                  border: 0;
+                  border-bottom: 3px solid rgba(84, 255, 255, 0.71);
+                  width: 100%;
+                  &:focus,
+                  &:active {
+                    outline: none;
+                  }
+                }
+                input[class="not-input-field"] {
+                  flex: 1 1;
+                  border: 0;
+                  border-bottom: 3px solid #e91e63 !important;
+                  width: 100%;
+                  &:focus,
+                  &:active {
+                    outline: none;
+                  }
+                }
+                .input-err {
+                  color: red;
+                }
+              }
+
+              .envoloe-key {
+                color: aqua;
+              }
+            }
+          }
+
+          .btn-wrapp {
+            display: flex;
+            justify-content: center;
+            .sign {
+              border: 2px solid black;
+              border-radius: 3px;
+              background: linear-gradient(
+                180deg,
+                #6a0883 1%,
+                rgba(198, 20, 242, 0.27) 100%
+              );
+              color: white;
+              height: 50px;
+              font-size: 31px;
+              width: 100%;
+              padding: 0 40px;
+              margin: 40px 50px 0;
+              &:focus,
+              &:active {
+                outline: none;
+              }
+              &:hover:enabled {
+                background: linear-gradient(
+                  180deg,
+                  #43dbdb 1%,
+                  rgba(255, 255, 255, 0.63) 100%
+                );
+              }
+            }
+          }
+        }
+        .account {
+          display: flex;
+          flex-direction: row;
+          //justify-content: center;
+          //align-items: center;
+          font-family: monospace;
+          font-style: normal;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 0.9px;
+          margin-top: 70px;
+          font-size: 17px;
+          padding-left: 40px;
+          //position: fixed;
+          //bottom: 10px;
+          .account-txt {
+          }
+          .account-create {
+            cursor: pointer;
+            color: aqua;
+            padding-left: 11px;
+            &:hover {
+              color: purple;
+            }
+          }
+        }
+      }
+    }
+  }
+}

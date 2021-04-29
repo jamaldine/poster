@@ -1,0 +1,80 @@
+.FormAddPost {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  //border: 1px solid #0000001f;
+  position: fixed;
+  top: 187px;
+  bottom: 10px;
+  //box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 75%);
+  //box-shadow: 0px 0px 3px 0px rgb(145 136 145);
+  box-shadow: 0px 0px 3px 0px rgba(145,136,145,1);
+
+  .title-content {
+    margin: 12px;
+    .title {
+      padding-left: 30px;
+      width: 100%;
+      height: 67px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      box-sizing: border-box;
+      font-family: Post No Bills Jaffna Light;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 54px;
+      color: #000000;
+    }
+    .content {
+      padding-left: 30px;
+      width: 100%;
+      height: 192px;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      box-sizing: border-box;
+      font-family: Thabit;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 31px;
+      color: #000000;
+    }
+  }
+  .dropZone {
+    margin: 12px;
+  }
+  .addPost-btn {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+    box-sizing: border-box;
+    cursor: default;
+    background: linear-gradient(
+      180deg,
+      #6a0883 1%,
+      rgba(198, 20, 242, 0.27) 100%
+    );
+    color: white;
+
+    &:hover:enabled {
+      color: rgb(240, 231, 231);
+      border: 3px solid white;
+      cursor: pointer;
+      background: linear-gradient(
+        180deg
+        , #43dbdb 1%, rgba(255, 255, 255, 0.63) 100%);
+    }
+    &:hover:enabled path {
+      fill: white;
+    }
+    .svg-inline--fa {
+      font-size: 35px;
+    }
+  }
+}

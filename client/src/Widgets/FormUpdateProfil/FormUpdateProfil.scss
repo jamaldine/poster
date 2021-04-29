@@ -1,0 +1,70 @@
+.formUpdateProfil {
+  display: flex;
+  justify-content: center;
+  .medias {
+    .title-content {
+      .details-medias {
+        height: 400px;
+        width: 400px;
+        position: relative;
+        .input-media {
+          color: rgba(0, 0, 0, 0);
+          width: 98px;
+          padding: 10px 0;
+          position: absolute;
+          bottom: -27px;
+          left: 38%;
+        }
+        .input-image {
+          height: 400px;
+          width: 400px;
+          border-radius: 40px;
+        }
+      }
+    }
+  }
+  .about {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 25px;
+    width: 400px;
+
+    .about-me {
+      width: 400px;
+
+      .title-content {
+        width: 400px;
+
+        .name,
+        .lastname {
+          margin: 12px 0;
+          padding: 7px;
+          width: 400px;
+        }
+      }
+    }
+    .updateProfil-btn {
+      height: 44px;
+      border: 2px solid black;
+      border-radius: 3px;
+      background: linear-gradient(
+        180deg,
+        #6a0883 1%,
+        rgba(198, 20, 242, 0.27) 100%
+      );
+      color: white;
+      height: 50px;
+      font-size: 31px;
+      width: 400px;
+      &:hover {
+        background: linear-gradient(
+          180deg,
+          #43dbdb 1%,
+          rgba(255, 255, 255, 0.63) 100%
+        );
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.commentLists {
+  .commentList {
+    //border: 3px solid blue;
+    display: flex;
+    flex-direction: column;
+    .comment-avatar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 72px 13px;
+      .comment {
+        display: flex;
+        flex-direction: column;
+        .item-comment {
+          padding: 22px;
+          background: antiquewhite;
+          margin: 22px;
+          .comment-name {
+            font-size: 19px;
+            font-weight: 500;
+          }
+        }
+        .commentLists-actions {
+          display: flex;
+          padding: 0 22px;
+          .comment-like, .like-comment {
+            padding: 0 4px;
+            color: #00000085;
+            svg {
+              path {
+                color: bisque;
+              }
+              &:hover path{
+                color: sandybrown;
+              }
+              &:hover{
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.child{
+  margin-left: 72px !important;
+}

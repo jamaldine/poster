@@ -1,0 +1,74 @@
+.postItem-genaralInfo {
+  padding: 10px;
+  width: 100%;
+  .postItemHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    .postItem-avatar {
+      width: 40px;
+      height: 40px;
+      //background: #c4c4c4;
+      border-radius: 50%;
+      margin-right: 20px;
+      .postItem-avatar-position {
+        width: 100%;
+        height: 100%;
+        .avatarImg {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+    .postItem-avatarInfo {
+      display: flex;
+      flex-direction: column;
+      .avatar-name {
+        font-family: Reenie Beanie;
+        font-style: normal;
+        color: #000000;
+      }
+      .avatar-rate {
+        display: flex;
+        flex-direction: row;
+        margin-top: auto;
+        .avatar-rate-post {
+          flex: 1;
+          align-self: flex-start;
+          font-family: Yellowtail;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 33px;
+          color: #000000;
+        }
+        .avatar-rate-comment {
+          flex: 1;
+          align-self: flex-end;
+          font-family: Yellowtail;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 33px;
+          color: #000000;
+        }
+      }
+    }
+    .toexpand{
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 41px;
+      .expands{
+        color: #3c1414;
+        &:hover{
+        cursor: pointer;
+      }
+      }
+      
+    }
+  }
+}
