@@ -47,7 +47,7 @@ app.use(bodyParser.json());
 
 
 mongoose.connect(
-    process.env.DBHOST || "mongodb+srv://root:qHylQxUUVt8VVgPt@cluster0.emxz4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongodb+srv://root:qHylQxUUVt8VVgPt@cluster0.emxz4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     {
         useUnifiedTopology: true,
         useNewUrlParser: true
@@ -71,7 +71,7 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 
-const PORT = process.env.PORT || 3001;
+const PORT =  3001;
 
 // Starting server function
 app.listen(PORT, function(){
